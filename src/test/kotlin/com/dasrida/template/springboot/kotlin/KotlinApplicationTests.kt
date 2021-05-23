@@ -7,6 +7,5 @@ import org.springframework.boot.test.context.SpringBootTest
 class KotlinApplicationTests {
 
     @Test
-    fun contextLoads() {
-    }
+    fun contextLoads() = Unit
 }
