@@ -1,0 +1,17 @@
+syntax = "proto3";
+package com.dasrida.template.springboot.proto;
+
+service SampleService {
+  rpc Bidirectional(stream Data) returns (stream Data);
+}
+
+message Data {
+  Position position = 1;
+  bytes image = 2;
+  bool active = 3;
+}
+
+message Position {
+  int32 x = 1;
+  int32 y = 2;
+}
