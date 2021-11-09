@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### Generated Sources ###
-.grpc_generated
+.grpc_generated/
