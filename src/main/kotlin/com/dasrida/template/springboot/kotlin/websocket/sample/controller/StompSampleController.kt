@@ -1,3 +1,6 @@
 package com.dasrida.template.springboot.kotlin.websocket.sample.controller
 
-class StompSampleController
+import org.springframework.stereotype.Controller
+
+@Controller
+class StompSampleController()
