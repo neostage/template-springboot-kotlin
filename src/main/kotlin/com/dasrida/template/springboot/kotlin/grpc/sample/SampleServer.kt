@@ -7,10 +7,10 @@ import kotlinx.coroutines.flow.flow
 
 class SampleServer(
     val dataset: Collection<Data>
-): SampleServiceGrpcKt.SampleServiceCoroutineImplBase() {
+) : SampleServiceGrpcKt.SampleServiceCoroutineImplBase() {
     override suspend fun bidirectional(requests: Flow<Data>): Flow<Data> =
         flow {
-            requests.collect {data ->
+            requests.collect { data ->
                 val list = computeIfAbasent
             }
         }
